@@ -3,7 +3,7 @@ from telegram.ext import CommandHandler
 
 from wiki import search_wiki
 
-TOKEN = "PRIVATE_KEYSS"
+TOKEN = "PRIVATE_KEYS"
 
 
 
@@ -36,7 +36,7 @@ def wikiword(update, context):
             update.message.reply_text("Веду поиск, ожидайте ...")
             geocoder_uri = geocoder_request_template = "http://geocode-maps.yandex.ru/1.x/"
             response = requests.get(geocoder_uri, params={
-                "apikey": "40d1649f-0493-4b70-98ba-98533de7710b",
+                "apikey": "40d1649f-043-4b70-98ba-9853de7710b",
                 "format": "json",
                 "geocode": update.message.text
             })
